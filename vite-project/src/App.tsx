@@ -1,7 +1,23 @@
 import "./App.css";
 
+import { Container } from "@mui/material";
+
+import ControlsBox from "./components/ControlsBox/ControlsBox";
+
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        minHeight: "100vh",
+        bgcolor: "gray",
+      }}
+    >
+      <ControlsBox />
+    </Container>
+  );
 }
 
 export default App;
