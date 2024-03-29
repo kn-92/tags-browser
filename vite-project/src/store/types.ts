@@ -1,4 +1,8 @@
 export interface State {
   numberOfElements: string;
-  setNumberOfElements: (newNumber: string) => void;
+  sort: string;
+  order: string;
+  setNumberOfElements: (payload: string) => void;
+  setSort: (payload: string) => void;
+  setOrder: (payload: string) => void;
 }

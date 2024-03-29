@@ -1,13 +1,21 @@
 import { Container } from "@mui/material";
 
-import ElementsNumberField from "./ElementsNumberField/ElementsNumberField";
+import NumberSelect from "./NumberSelect/NumberSelect";
+import SortSelect from "./SortSelect/SortSelect";
+import OrderSelect from "./OrderSelect/OrderSelect";
 
 const ControlsBox = () => {
   return (
     <Container
-      sx={{ display: "flex", alignItems: "center", justifyContent: "right" }}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "right",
+      }}
     >
-      <ElementsNumberField />
+      <NumberSelect />
+      <SortSelect />
+      <OrderSelect />
     </Container>
   );
 };

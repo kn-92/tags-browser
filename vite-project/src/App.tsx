@@ -12,6 +12,7 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         minHeight: "100vh",
+        paddingTop: "20px",
         bgcolor: "gray",
       }}
     >
