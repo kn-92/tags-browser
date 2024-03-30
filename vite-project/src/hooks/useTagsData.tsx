@@ -11,8 +11,6 @@ const useTagsData = () => {
   const apiUrl = `https://api.stackexchange.com/2.3/tags?page=${page}&pagesize=${tagsByPage}&order=${order}&sort=${sort}&site=stackoverflow`;
 
   const { data, error, isLoading } = useSWR(apiUrl, getTags);
-  console.log(data);
-
   return { data, error, isLoading };
 };
 export default useTagsData;
