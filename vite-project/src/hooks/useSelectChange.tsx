@@ -24,26 +24,8 @@ const useSelectChange = () => {
     }
   };
 
-  // const handlenNumberChange = (e: SelectChangeEvent<string>) => {
-  //   inputValue.current = e.target.value;
-  //   updateElementsNumber(inputValue.current);
-  // };
-
-  // const handleSortChange = (e: SelectChangeEvent<string>) => {
-  //   inputValue.current = e.target.value;
-  //   updateSort(inputValue.current);
-  // };
-
-  // const handleOrderChange = (e: SelectChangeEvent<string>) => {
-  //   inputValue.current = e.target.value;
-  //   updateOrder(inputValue.current);
-  // };
-
   return {
     inputValue,
-    // handlenNumberChange,
-    // handleSortChange,
-    // handleOrderChange,
     handleChange,
   };
 };

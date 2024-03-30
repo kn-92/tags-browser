@@ -2,7 +2,7 @@ import { InputLabel, FormControl, Select, MenuItem } from "@mui/material";
 
 import useSelectChange from "../../../hooks/useSelectChange";
 
-const ElementsNumberField = () => {
+const NumberSelect = () => {
   const { inputValue, handleChange } = useSelectChange();
   return (
     <FormControl
@@ -26,4 +26,4 @@ const ElementsNumberField = () => {
   );
 };
 
-export default ElementsNumberField;
+export default NumberSelect;

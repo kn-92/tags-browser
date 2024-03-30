@@ -1,8 +1,9 @@
-import { List, ListItem, ListItemText, Typography } from "@mui/material";
+import { List, Typography } from "@mui/material";
 
 import useTagsData from "../../../hooks/useTagsData";
 
 import { TagItem } from "./types";
+import ListElement from "./ListElement/ListElement";
 
 const TagsList = () => {
   const { data, error, isLoading } = useTagsData();
@@ -14,28 +15,11 @@ const TagsList = () => {
         {error.toString()}
       </Typography>
     );
-  console.log(data);
-  console.log(error);
+
   return (
     <List sx={{ width: "50%" }}>
       {data?.items?.map((tag: TagItem) => (
-        <ListItem
-          key={tag.name}
-          sx={{
-            width: "100%",
-            border: "1px solid black",
-            borderRadius: "5px",
-            marginBottom: "10px",
-            fontWeight: "bold",
-            "&:hover": { bgcolor: "#464646", scale: "1.1" },
-            transition: "0.2s",
-          }}
-        >
-          {"#" + tag.name}
-          <ListItemText sx={{ marginLeft: "10px", color: "white" }}>
-            {"Count: " + tag.count}
-          </ListItemText>
-        </ListItem>
+        <ListElement key={tag.name} name={tag.name} count={tag.count} />
       ))}
     </List>
   );

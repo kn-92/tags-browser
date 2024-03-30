@@ -1,13 +1,9 @@
 import { Pagination } from "@mui/material";
 
-import { useStore } from "../../store/store";
+import usePaginationPage from "../../hooks/usePaginationPage";
 
 const PaginationBox = () => {
-  const setPage = useStore((state) => state.setPage);
-  const handleChange = (e: React.ChangeEvent<unknown>, p: number) => {
-    setPage(p);
-  };
-
+  const { handleChange } = usePaginationPage();
   return (
     <Pagination
       sx={{ marginBottom: "20px" }}

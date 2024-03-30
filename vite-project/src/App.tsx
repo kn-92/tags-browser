@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { Container } from "@mui/material";
 
 import ControlsBox from "./components/ControlsBox/ControlsBox";
@@ -15,7 +13,6 @@ function App() {
         alignItems: "center",
         minHeight: "100vh",
         paddingTop: "20px",
-        bgcolor: "gray",
       }}
     >
       <ControlsBox />
