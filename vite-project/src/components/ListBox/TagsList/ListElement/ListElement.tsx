@@ -15,7 +15,7 @@ const ListElement = ({ name, count }: ListElementProps) => {
       }}
     >
       {"#" + name}
-      <ListItemText sx={{ marginLeft: "10px", color: "orange" }}>
+      <ListItemText sx={{ marginLeft: "10px", color: "#ddd" }}>
         {"Count: " + count}
       </ListItemText>
     </ListItem>

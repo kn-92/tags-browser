@@ -11,7 +11,7 @@ const TagsList = () => {
   if (isLoading) return <Typography variant="h3">Loading...</Typography>;
   if (error)
     return (
-      <Typography color="red" variant="h5">
+      <Typography color="black" variant="h5">
         {error.toString()}
       </Typography>
     );
