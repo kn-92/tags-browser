@@ -3,6 +3,8 @@ import "./App.css";
 import { Container } from "@mui/material";
 
 import ControlsBox from "./components/ControlsBox/ControlsBox";
+import ListBox from "./components/ListBox/ListBox";
+import PaginationBox from "./components/Pagination/Pagination";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       }}
     >
       <ControlsBox />
+      <ListBox />
+      <PaginationBox />
     </Container>
   );
 }

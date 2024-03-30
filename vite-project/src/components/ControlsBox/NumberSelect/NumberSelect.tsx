@@ -10,13 +10,13 @@ const ElementsNumberField = () => {
       size="small"
       sx={{ width: "100px", marginLeft: "20px" }}
     >
-      <InputLabel id="elements-label">Elements Number</InputLabel>
+      <InputLabel id="elements-label">Per page</InputLabel>
       <Select
         labelId="elements-label"
         value={inputValue.current}
         onChange={(e) => handleChange(e, "number")}
         label="Number"
-        defaultValue="10"
+        defaultValue="30"
       >
         <MenuItem value="10">10</MenuItem>
         <MenuItem value="20">20</MenuItem>

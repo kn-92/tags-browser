@@ -13,7 +13,7 @@ const SortSelect = () => {
     >
       <InputLabel id="order-label">Order</InputLabel>
       <Select
-        defaultValue="asc"
+        defaultValue="desc"
         labelId="order-label"
         label="Order"
         onChange={(e) => handleChange(e, "order")}

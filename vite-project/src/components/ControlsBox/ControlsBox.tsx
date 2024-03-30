@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 
 import NumberSelect from "./NumberSelect/NumberSelect";
 import SortSelect from "./SortSelect/SortSelect";
@@ -10,12 +10,17 @@ const ControlsBox = () => {
       sx={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "right",
+        justifyContent: "space-between",
       }}
     >
-      <NumberSelect />
-      <SortSelect />
-      <OrderSelect />
+      <Box>
+        <Typography variant="h3">Tags Browser</Typography>
+      </Box>
+      <Box alignContent="right">
+        <NumberSelect />
+        <SortSelect />
+        <OrderSelect />
+      </Box>
     </Container>
   );
 };
