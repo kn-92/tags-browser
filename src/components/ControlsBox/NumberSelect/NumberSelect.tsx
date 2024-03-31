@@ -1,20 +1,17 @@
-import { InputLabel, FormControl, Select, MenuItem } from "@mui/material";
+import { InputLabel, FormControl, Select, MenuItem } from '@mui/material';
 
-import useSelectChange from "../../../hooks/useSelectChange";
+import useSelectChange from '../../../hooks/useSelectChange';
 
 const NumberSelect = () => {
   const { inputValue, handleChange } = useSelectChange();
+
   return (
-    <FormControl
-      variant="outlined"
-      size="small"
-      sx={{ width: "100px", marginLeft: "20px" }}
-    >
+    <FormControl variant="outlined" size="small" sx={{ width: '100px', marginLeft: '20px' }}>
       <InputLabel id="elements-label">Per page</InputLabel>
       <Select
         labelId="elements-label"
-        value={inputValue.current}
-        onChange={(e) => handleChange(e, "number")}
+        ref={inputValue}
+        onChange={(e) => handleChange(e, 'number')}
         label="Number"
         defaultValue="30"
       >

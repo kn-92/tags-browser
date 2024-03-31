@@ -1,8 +1,8 @@
-import { useRef } from "react";
+import { useRef } from 'react';
 
-import { useStore } from "../store/store";
+import { useStore } from '../store/store';
 
-import { SelectChangeEvent } from "@mui/material";
+import { SelectChangeEvent } from '@mui/material';
 
 const useSelectChange = () => {
   const inputValue = useRef<string>();
@@ -13,13 +13,13 @@ const useSelectChange = () => {
 
   const handleChange = (e: SelectChangeEvent<string>, name: string) => {
     inputValue.current = e.target.value;
-    if (name === "number") {
+    if (name === 'number') {
       updateElementsNumber(inputValue.current);
     }
-    if (name === "sort") {
+    if (name === 'sort') {
       updateSort(inputValue.current);
     }
-    if (name === "order") {
+    if (name === 'order') {
       updateOrder(inputValue.current);
     }
   };

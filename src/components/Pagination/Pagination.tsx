@@ -4,6 +4,7 @@ import usePaginationPage from "../../hooks/usePaginationPage";
 
 const PaginationBox = () => {
   const { handleChange } = usePaginationPage();
+
   return (
     <Pagination
       sx={{ marginBottom: "20px" }}
