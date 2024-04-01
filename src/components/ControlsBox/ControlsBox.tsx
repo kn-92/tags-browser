@@ -1,16 +1,16 @@
-import { Container, Typography, Box } from "@mui/material";
+import { Container, Typography, Box } from '@mui/material';
 
-import NumberSelect from "./NumberSelect/NumberSelect";
-import SortSelect from "./SortSelect/SortSelect";
-import OrderSelect from "./OrderSelect/OrderSelect";
+import NumberSelect from './NumberSelect/NumberSelect';
+import SortSelect from './SortSelect/SortSelect';
+import OrderSelect from './OrderSelect/OrderSelect';
 
 const ControlsBox = () => {
   return (
     <Container
       sx={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
       }}
     >
       <Box>

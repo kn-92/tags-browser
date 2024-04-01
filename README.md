@@ -1,7 +1,9 @@
 # scripts
 
+"npm start" - starts project
+
 "npm run dev" - starts develompent server
-"npm install" - install dependencies
+
 "npm run storybook" - starts storybook
 
 # React + TypeScript + Vite
@@ -23,9 +25,9 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
 };
