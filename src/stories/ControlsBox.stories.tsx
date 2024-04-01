@@ -1,7 +1,7 @@
-import ControlsBox from "../components/ControlsBox/ControlsBox";
+import ControlsBox from '../components/ControlsBox/ControlsBox';
 
 export default {
-  title: "Control Box with select inputs and h1 title of app",
+  title: 'Control Box with select inputs and h1 title of app',
   component: ControlsBox,
 };
 

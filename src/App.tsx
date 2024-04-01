@@ -1,7 +1,5 @@
 import { Container } from '@mui/material';
 
-import './main.css';
-
 import ControlsBox from './components/ControlsBox/ControlsBox';
 import ListBox from './components/ListBox/ListBox';
 import PaginationBox from './components/Pagination/Pagination';
